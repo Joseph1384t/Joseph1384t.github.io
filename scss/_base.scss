@@ -1,0 +1,123 @@
+// Variables, Mixins, Reset Styles,...
+//  میکسین ها ساخته شود و کد ها یاضافی جای خود را به دیگر میکسین ها دهند
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    background: linear-gradient(135deg, rgb(111, 69, 237), rgb(28, 43, 76), rgb(15, 22, 35), rgb(26, 37, 60), rgb(41, 76, 115));
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+$color-yellow: #B5D01E;
+$color-slow-white: #7083ac83;
+$color-fast-white: #7083ac;
+$color-white: #fff;
+$color-back: #28204d;
+$color-hover: #2b294f;
+$color-Dark-Blue: #181255;
+$color_B_transs:rgb(0 0 0 / 21%);
+
+$font-sh: "SFHypocrisy",
+sans;
+$font-exo: "ExoSoft",
+sans-serif;
+$font-reg: "Register",
+arial;
+$font-pop:"Poppins",
+arial;
+
+%parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: .6rem;
+}
+
+%main-title {
+    color: #fff;
+    font-family: $font-sh;
+    font-size: 18px;
+    font-weight: 100;
+    // مارجین چپ کلا باید حذف و به main انتقال پیدا کند
+}
+
+%middle-title {
+    color: #fff;
+    font-family: $font-reg;
+    font-size: 25px;
+    font-weight: 100;
+    // مارجین چپ کلا باید حذف و به main انتقال پیدا کند
+}
+
+%other-title {
+    font-family: $font-exo;
+    color: #fff;
+    font-size: 14px;
+    // position: relative;
+    // margin-left: 2rem;
+}
+
+@font-face {
+    font-family: "Register";
+    src: url("../fonts/Regist/Web/a7c5ad932720e75cde546ec588adc972.eot");
+    src: url("../fonts/Regist/Web/a7c5ad932720e75cde546ec588adc972.ttf") format("ttf"),
+        url("../fonts/Regist/Web/a7c5ad932720e75cde546ec588adc972.woff") format("woff"),
+        url("../fonts/Regist/Web/a7c5ad932720e75cde546ec588adc972.woff2")format("woff2"),
+        url("../fonts/Regist/Web/a7c5ad932720e75cde546ec588adc972.ttf")format("truetype"),
+        url("../fonts/Regist/Web/a7c5ad932720e75cde546ec588adc972.svg")format("svg");
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../Fonts/Poppins/Poppins-Bold.ttf");
+}
+
+@font-face {
+    font-family: SFHypocrisy;
+    src: url("../fonts/SFHypocrisy-Medium.otf");
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: ExoSoft;
+    src: url("../fonts/Exo\ Soft\ W05\ Regular.otf");
+    // font-weight: lighter;
+}
+
+@mixin sh-fa {
+    font-family: $font-sh;
+    font-size: 18px;
+    font-style: normal;
+    color: $color-yellow;
+}
+
+@mixin divCircle($width, $height) {
+    border-radius: 50%;
+    width: $width;
+    height: $height;
+    overflow: hidden;
+}
+
+%img {
+    width: 100%;
+    position: relative;
+}
+
+%desc-ch {
+    color: $color-slow-white;
+    font-family: $font-exo;
+}

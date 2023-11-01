@@ -1,0 +1,281 @@
+// مواردی که قابلیت استفاده مجدد دارند مثلا دکمه هاو ...
+// .sidebar a:h {
+//   color: $color-yellow;
+//   background-color: $color-hover;
+// }
+.trans2 {
+  position: absolute;
+  z-index: 1;
+  width: 1310px;
+  height: 885px;
+  z-index: 1;
+  top: 28px;
+  left: 91px;
+  backdrop-filter: blur(5px);
+  background: $color_B_transs;
+  border-radius: 40px;
+}
+.trans3 {
+  position: absolute;
+  z-index: 1;
+  width: 1310px;
+  height: 885px;
+  z-index: 1;
+  top: 28px;
+  left: 91px;
+  backdrop-filter: blur(5px);
+  background: $color_B_transs;
+   transform: rotate(-2deg);
+  border-radius: 40px;
+}
+.trans4 {
+  position: absolute;
+  z-index: 1;
+  width: 1310px;
+  height: 885px;
+  z-index: 1;
+  top: 28px;
+  left: 91px;
+  backdrop-filter: blur(5px);
+  background: $color_B_transs;
+   transform: rotate(-4deg);
+  border-radius: 40px;
+}
+.sidebar img {
+  width: 24px;
+  // margin-top: 20px;
+}
+
+.sp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.sidebar a {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  color: $color-slow-white;
+  height: 3.7rem;
+  width: 3.7rem;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+aside .aa {
+  position: absolute;
+  bottom: 2rem;
+}
+
+.searchButton {
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+//   end sear cadr
+
+.XCRYP {
+  @include sh-fa;
+  position: absolute;
+  top: 1rem;
+  letter-spacing: 1px;
+}
+
+
+
+// Strart Icons
+a circle,
+a path {
+  transition: all .5s ease;
+}
+
+.sidebar a:hover ,.sidebar .active{
+  background-color: $color-hover;
+
+  .hrt0,
+  .cit2,
+  .cit3,
+  .chrt1,
+  .ext0,
+  .grd1,
+  .pl0 {
+    stroke: $color-yellow;
+  }
+
+  .hrt1,
+  .cit1,
+  .pl1,
+  .ddh,
+  .ext1,
+  .chrt0 {
+    fill: $color-yellow;
+  }
+}
+
+a:hover {
+  .dwn0 {
+    fill: $color-yellow;
+  }
+
+  .sr0 {
+    stroke: $color-yellow;
+  }
+
+  .thth0 {
+    fill: $color-fast-white;
+  }
+}
+
+.thth0 {
+  fill: $color-yellow;
+}
+
+.sr0 {
+  fill: none;
+  stroke: $color-fast-white;
+  stroke-width: 1.2;
+  stroke-miterlimit: 10;
+}
+
+.grd1 {
+  fill: none;
+  stroke: $color-fast-white;
+  stroke-width: 1.5;
+  stroke-miterlimit: 10;
+}
+
+.hrt0 {
+  fill: none;
+  stroke: $color-fast-white;
+  stroke-width: 1.5;
+  stroke-miterlimit: 10;
+}
+
+.hrt1 {
+  fill: $color-fast-white;
+}
+
+.cit1 {
+  fill: $color-fast-white;
+}
+
+.cit2 {
+  fill: none;
+  stroke: $color-fast-white;
+  stroke-width: 1.5;
+  stroke-miterlimit: 10;
+}
+
+.cit3 {
+  fill: none;
+  stroke: $color-fast-white;
+  stroke-miterlimit: 10;
+}
+
+.pl0 {
+  fill: none;
+  stroke: $color-fast-white;
+  stroke-width: 1.5;
+  stroke-miterlimit: 10;
+}
+
+.pl1 {
+  fill: $color-fast-white;
+}
+
+.ddh {
+  fill: $color-fast-white;
+}
+
+.chrt0 {
+  fill: $color-fast-white;
+}
+
+.chrt1 {
+  fill: none;
+  stroke: $color-fast-white;
+  stroke-width: 1.5;
+  stroke-miterlimit: 10;
+}
+
+.ext0 {
+  fill: none;
+  stroke: $color-fast-white;
+  stroke-width: 1.5;
+  stroke-miterlimit: 10;
+}
+
+.ext1 {
+  fill: $color-fast-white;
+}
+
+.msg0 {
+  fill: $color-fast-white;
+}
+
+.msg1,
+.ntf1 {
+  fill: none;
+  stroke: $color-fast-white;
+  stroke-width: 1.5;
+  stroke-miterlimit: 10;
+}
+
+.ntf2 {
+  fill: $color-yellow;
+}
+
+.dwn0 {
+  fill: $color-fast-white;
+}
+
+.msg a circle,
+.msg a path,
+.notif a circle,
+.notif a path {
+  transition: all .5s ease;
+}
+
+.notif {
+  margin-left: 10px;
+}
+
+.msg,
+.notif {
+  a {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 3.7rem;
+    width: 3.7rem;
+    padding: 1rem;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    background: rgba(255 255 255/ 3%);
+    border-radius: 10px;
+  }
+
+  a:hover {
+    .msg0 {
+      fill: $color-yellow;
+    }
+
+    .msg1,
+    .ntf1 {
+      stroke: $color-yellow;
+    }
+
+    .ntf2 {
+      fill: lighten($color-Dark-Blue, 20%);
+    }
+  }
+}
+
+// End Icons
